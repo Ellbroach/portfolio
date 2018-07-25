@@ -1,0 +1,32 @@
+
+
+.App{
+  height: 100vh;
+}
+
+.App video{
+  width: 100vw
+}
+
+.form {
+  color: antiquewhite;
+  text-align: center;
+  position: relative;
+  left: 30%;
+  right: 30%;
+}
+
+
+#wrapper {
+  position: relative;
+}
+#wrapper div, #wrapper video {
+  position: absolute;
+  top: 0;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
