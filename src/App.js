@@ -13,7 +13,7 @@ class App extends Component {
         <source type="video/webm" src={Background} />
     </video>
     <div className="form">
-        <h1>Hello, my name is Elliot</h1>
+        <h1>Hi, my name is Elliot</h1>
         <h2>Thanks for stopping by ...</h2>
         <form>
             <label for="input">Form Input Label</label>
@@ -22,6 +22,9 @@ class App extends Component {
         </form>            
     </div>
 </div>
+<section id="scroll" className="scroll-down">
+  <a><span></span>Explore</a>
+</section>
 </div>
     );
   }
