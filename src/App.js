@@ -35,6 +35,7 @@ class App extends Component {
           </video>
           <div className="form">
             <h1>Hi, my name is Elliot</h1>
+            <h1>and I am a Fullstack Developer</h1>
             <h2>Thanks for stopping by </h2>
           </div>
         </div>
