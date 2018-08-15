@@ -35,8 +35,7 @@ class App extends Component {
           </video>
           <div className="form">
             <h1>Hi, my name is Elliot</h1>
-            <h1>and I am a Fullstack Developer</h1>
-            <h2>Thanks for stopping by </h2>
+            <h1>I am a Fullstack Developer</h1>
           </div>
         </div>
         <section id="scroll" className="scroll-down">
@@ -131,7 +130,7 @@ class App extends Component {
                   href="https://expo.io/@artifact/ARTifact"
                   className="btn visit-site"
                 >
-                  SEE ON EXPO
+                  VISIT ON EXPO
                 </a>
                 <a
                   href="https://github.com/lordprana/ARTifactClient"
