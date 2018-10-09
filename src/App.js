@@ -5,10 +5,10 @@ import Background from './resources/Far_4K_Motion_Background_Loop (1).mp4';
 import Me from './resources/Me.jpg';
 import Brew from './resources/True-Brew.png';
 import Artifact from './resources/Artifact.mp4';
+import Market from './resources/Market-Monitor.png';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
-
-
-const baseUrl = "http://127.0.0.1:3000";
+import Popup from './popUp';
+import Contact from './popUpContact'
 
 class App extends Component {
   constructor(props) {
@@ -34,8 +34,8 @@ class App extends Component {
             <source type="video/webm" src={Background} />
           </video>
           <div className="form">
-            <h1>Hi, my name is Elliot</h1>
-            <h1>I am a Fullstack Developer</h1>
+            <h1>Hello I'm Elliot Broach.</h1>
+            <h1>I'm a Fullstack Developer.</h1>
           </div>
         </div>
         <section id="scroll" className="scroll-down">
@@ -46,21 +46,19 @@ class App extends Component {
         <h1 id="my-story" className="story">
           My Story
         </h1>
+        {/* <Popup/> */}
         <div className="bio">
           <div className="image-and-contact">
-            <img src={Me} />
+            <img className='me' src={Me} />
             <div className="button-container">
-              <div class="button">
-                <span class="button__mask" />
-                <span class="button__text">Resume</span>
-                <span class="button__text button__text--bis">Resume</span>
-              </div>
+              <Popup/>
               <br />
-              <div class="button">
-                <span class="button__mask" />
-                <span class="button__text">Contact Me</span>
-                <span class="button__text button__text--bis">Contact Me</span>
-              </div>
+              <Contact/>
+              {/* <div className="button">
+                <span className="button__mask" />
+                <span className="button__text">Contact Me</span>
+                <span className="button__text button__text--bis">Contact Me</span>
+              </div> */}
             </div>
           </div>
           <h2>
@@ -130,10 +128,38 @@ class App extends Component {
                   href="https://expo.io/@artifact/ARTifact"
                   className="btn visit-site"
                 >
-                  VISIT ON EXPO
+                  VISIT EXPO
                 </a>
                 <a
                   href="https://github.com/lordprana/ARTifactClient"
+                  className="btn visit-site"
+                >
+                  SEE GITHUB
+                </a>
+        </div>
+        </div>
+        </div>
+        <div className='market-monitor'>
+        <div className='market-image-name'>
+        <h2>Market Monitor</h2>
+        <img src={Market}/>
+        </div>
+        <div className='market-description'>
+        <h2>
+        Market Monitor was conceived as a sleek and legible way to identify, study and follow
+        exciting new investment opportunities within the cryptocurrency community as well the stock market.
+        Combining the AlphaVantage API with React-Vis, this project allows users to seemlessly track market values 
+        throughout four different time periods.
+        </h2>
+        <div className='market-buttons'>
+        <a
+                  href="https://market-monitor-2.herokuapp.com/"
+                  className="btn visit-site"
+                >
+                  VISIT SITE
+                </a>
+                <a
+                  href="https://github.com/Ellbroach/market-monitor"
                   className="btn visit-site"
                 >
                   SEE GITHUB
