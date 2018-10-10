@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Background from './resources/Far_4K_Motion_Background_Loop (1).mp4';
 import Me from './resources/Me.jpg';
@@ -8,7 +7,7 @@ import Artifact from './resources/Artifact.mp4';
 import Market from './resources/Market-Monitor.png';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import Popup from './popUp';
-import Contact from './popUpContact'
+import Contact from './popUpContact';
 
 class App extends Component {
   constructor(props) {
@@ -19,7 +18,7 @@ class App extends Component {
   }
 
   scrollTo() {
-    scroller.scrollTo("my-story", {
+    scroller.scrollTo("bio", {
       duration: 800,
       delay: 0,
       smooth: "easeInOutQuart"
@@ -43,10 +42,6 @@ class App extends Component {
             <span />Explore
           </a>
         </section>
-        <h1 id="my-story" className="story">
-          My Story
-        </h1>
-        {/* <Popup/> */}
         <div className="bio">
           <div className="image-and-contact">
             <img className='me' src={Me} />
@@ -54,19 +49,14 @@ class App extends Component {
               <Popup/>
               <br />
               <Contact/>
-              {/* <div className="button">
-                <span className="button__mask" />
-                <span className="button__text">Contact Me</span>
-                <span className="button__text button__text--bis">Contact Me</span>
-              </div> */}
             </div>
           </div>
           <h2>
-            My name is Elliot Broach and I am a full-stack web developer. Having
-            graduated from Colgate University in 2017 with a degree in Art
-            History and an emphasis in contemporary visual design, I then
-            enrolled in Fullstack Academy to learn how to bring my ideas to the
-            web. I have a serious passion for creating dynamic user experiences
+            
+            I graduated from Colgate University in 2017 with a degree in Art
+            History and an emphasis in contemporary visual design. I then
+            enrolled in Fullstack Academy to learn how to bring my passion for design to the
+            web. I have a serious fondness for creating dynamic user experiences
             and believe that the best sites are often those that are most
             intuitive.
           </h2>

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700,900|Dosis|Nunito");
 .App {
   background: #B4CDCD; }
 
@@ -60,18 +60,23 @@ section {
   background: #B4CDCD; }
 
 .bio {
-  display: flex;
   padding-top: 2vh; }
 
 .bio h2 {
   text-align: center;
   font-size: 2vw;
-  margin: 40px 60px 30px; }
+  margin: 3vh 10vw 30px;
+  font-family: 'Nunito'; }
+
+.image-and-contact {
+  text-align: center; }
 
 .me {
-  height: 300px;
-  border-radius: 100%;
-  margin-left: 5vw; }
+  height: 275px;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 4vh;
+  box-shadow: 0 0 .2pt 1pt gray; }
 
 .projects {
   background-color: lightgrey;
@@ -153,8 +158,7 @@ body {
 
 .button-container {
   display: flex;
-  justify-content: center;
-  margin-left: 3.6vw; }
+  justify-content: center; }
 
 .button {
   text-align: center;
@@ -164,6 +168,7 @@ body {
   display: inline-block;
   border: .2em solid;
   position: relative;
+  border-radius: 5px;
   cursor: pointer;
   overflow: hidden;
   width: 200px;
@@ -251,16 +256,18 @@ body {
   margin-bottom: 30px; }
 
 .brew {
-  display: flex; }
+  display: flex;
+  padding: 2vh 0; }
 
 .brew-description h2 {
   font-size: 1.36vw;
   text-align: center;
-  padding: 10vh 40px 3vh; }
+  padding: 10vh 40px 3vh;
+  font-family: 'Nunito'; }
 
 .brew-buttons {
   text-align: center;
-  padding: 0 40px; }
+  padding: 10px 40px 0; }
 
 .brew-description {
   padding-bottom: 20px; }
