@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom';
@@ -15,9 +16,9 @@ class Popup extends React.Component{
           <h2>Ellbroach@gmail.com</h2>
           <h2>203-803-8817</h2>
           <h2>https://github.com/Ellbroach</h2>
-          <h3>Thanks for reaching out!</h3>
+          <h2>Thanks for reaching out!</h2>
           </div>
-          <button className='close_button' onClick={this.props.closePopup}>Close</button>
+          <button className='close_button' onClick={this.props.closePopup}>CLOSE</button>
           </div>
         </div>
       );
@@ -25,7 +26,7 @@ class Popup extends React.Component{
   }
 
 
-export default class Contact extends React.Component {
+export default class ContactPopup extends React.Component {
     constructor() {
       super();
       this.state = {
@@ -39,14 +40,13 @@ export default class Contact extends React.Component {
     }
     render() {
       return (
-        <div className='button'>
-        <span className="button__mask" />
-                <span className="button__text">Contact Me</span>
-                <span onClick={this.togglePopup.bind(this)} className="button__text button__text--bis">Contact Me</span>
-          {/* <button onClick={this.togglePopup.bind(this)}>Resume</button> */}
-          {this.state.showPopup ? 
+        <div className='popup-body'>
+        <div className="popup-resume">
+		<button className="resume-button" onClick={this.togglePopup.bind(this)}>CONTACT ME</button>
+        </div>
+        {this.state.showPopup ? 
             <Popup
-              closePopup={this.togglePopup.bind(this)}
+            closePopup={this.togglePopup.bind(this)}
             />
             : null
           }

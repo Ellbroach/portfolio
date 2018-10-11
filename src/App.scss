@@ -2,6 +2,8 @@
 .App {
   background: #B4CDCD; }
 
+  button:focus {outline:0;}
+
 .form {
   color: white;
   text-align: center;
@@ -31,7 +33,7 @@
 #wrapper video {
   width: 100vw;
   object-fit: cover;
-  box-shadow: 0 0 5pt 7pt cadetblue; }
+  box-shadow: 0 0 8pt 3pt cadetblue; }
 
 .scroll-down a {
   position: absolute;
@@ -514,7 +516,8 @@ body {
   position: relative;
   top: 2vh;
   width: 40vw;
-  margin: 0 auto;
+  margin: 0 auto 2vh;
+  
 }
 
 .contact h2{
@@ -557,7 +560,8 @@ body {
 
 .close_button {
   background: #8B0000;
-  color: #fff;
+  // color: #fff;
+  color: whitesmoke;
   border: none;
   position: relative;
   right: 20px;
@@ -571,9 +575,75 @@ body {
   outline: none;
   margin-bottom: 15px;
   width: 10vw;
+  font-weight: 600;
+}
+
+.close_button {
+  background: #8B0000;
+  // color: #fff;
+  color: whitesmoke;
+  border: none;
+  position: relative;
+  right: 20px;
+  height: 30px;
+  font-size: 14px;
+  padding: 0 12px;
+  cursor: pointer;
+  -webkit-transition: 800ms ease all;
+  -o-transition: 800ms ease all;
+  transition: 800ms ease all;
+  outline: none;
+  margin-bottom: 15px;
+  width: 10vw;
+  margin-top: 2.5vh;
 }
 
 .close_button:hover{
-  background: #fff;
+  // background: #fff;
+  background: whitesmoke;
   color: #8B0000;
+}
+
+//RESUME BUTTON
+
+.popup-resume .resume-button {
+  display: inline-block;
+  color: #fff;
+  background: #B4CDCD;
+  margin: 20px;
+  text-align: center;
+  margin: 25px 20px;
+  touch-callout: none;
+  user-select: none;
+  display: inline-block;
+  border: 2.5px solid;
+  position: relative;
+  overflow: hidden;
+  width: 14vw;
+  height: 7.5vh;
+  opacity: 0.6;
+  color: black;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover{
+      opacity: .95;
+  }
+}
+
+.popup-resume .resume-button:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -80px;
+  height: 100px;
+  width: 70px;
+  background: rgba(255, 255, 255, .7);
+  transform: rotate(345deg);
+}
+
+.popup-resume .resume-button:hover:before {
+  left: 240px;
+  transition: all .3s;
 }

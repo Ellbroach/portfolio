@@ -1,16 +1,18 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom';
-import Resume from './resources/Resume.jpeg';
 
 
 class Popup extends React.Component{
     render() {
+        // const {beer} = this.props
       return (
         <div className='popup'>
           <div className='popup_inner'>
-          <img src={Resume}/>
-          <button className='close_button' onClick={this.props.closePopup}>CLOSE</button>
+            <h1>Hello</h1>
+            <h2>Dude</h2>
+            <h3>Work</h3>
+          <button onClick={this.props.closePopup}>close</button>
           </div>
         </div>
       );
@@ -18,7 +20,7 @@ class Popup extends React.Component{
   }
 
 
-export default class ResumePopup extends React.Component {
+export default class TestBody extends React.Component {
     constructor() {
       super();
       this.state = {
@@ -33,10 +35,8 @@ export default class ResumePopup extends React.Component {
     render() {
       return (
         <div className='popup-body'>
-        <div className="popup-resume">
-		<button className="resume-button" onClick={this.togglePopup.bind(this)}>RESUME</button>
-        </div>
-        {this.state.showPopup ? 
+          <button onClick={this.togglePopup.bind(this)}>Read Description</button>
+          {this.state.showPopup ? 
             <Popup
             closePopup={this.togglePopup.bind(this)}
             />

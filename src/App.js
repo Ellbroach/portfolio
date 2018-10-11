@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './test.css'
 import Background from './resources/Far_4K_Motion_Background_Loop (1).mp4';
 import Me from './resources/Me.jpg';
 import Brew from './resources/True-Brew.png';
@@ -8,6 +9,8 @@ import Market from './resources/Market-Monitor.png';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import Popup from './popUp';
 import Contact from './popUpContact';
+
+
 
 class App extends Component {
   constructor(props) {
@@ -46,6 +49,8 @@ class App extends Component {
           <div className="image-and-contact">
             <img className='me' src={Me} />
             <div className="button-container">
+
+
               <Popup/>
               <br />
               <Contact/>
