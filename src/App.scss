@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700,900|Dosis|Nunito");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700,900|Dosis|Hind|Nunito|Cabin");
 .App {
   background: #B4CDCD; }
 
@@ -269,7 +269,7 @@ body {
  .brew-description h2{
    font-size: 1.36vw;
    text-align: center;
-   padding: 10vh 40px 3vh;
+   padding: 8.5vh 40px 2.5vh;
    font-family: 'Nunito'
  }
 
@@ -357,7 +357,8 @@ body {
  .project-image-name h2{
    margin-top: 15px;
    margin-bottom: 10px;
-   margin-left: 2.2vw;
+   //margin-left: 5.4vw;
+   font-family: 'Cabin'
  }
 
 .artifact {
@@ -378,7 +379,7 @@ body {
 }
 
 .video-title h2{
-  margin-left: 2.5vw;
+  margin-left: 2.6vw;
   margin-bottom: 10px
 }
 
@@ -386,6 +387,7 @@ body {
   font-size: 1.36vw;
   text-align: center;
   padding: 12vh 40px 3.7vh;
+  font-family: 'Nunito'
 }
 
 .art-buttons{
@@ -440,8 +442,8 @@ body {
 .market-description h2{
   font-size: 1.36vw;
   text-align: center;
-  padding: 10vh 40px 3vh;
-  margin-top: 80px;
+  padding: 10vh 40px 5vh;
+  margin-top: 9vh;
   line-height: 1.4;
   // font-family: 'Chelsea Market'
 }
@@ -646,4 +648,18 @@ body {
 .popup-resume .resume-button:hover:before {
   left: 240px;
   transition: all .3s;
+}
+
+.video-title{
+  font-family: 'Cabin';
+  letter-spacing: 1px
+}
+
+.market-image-name h2{
+  margin: 3.5vh 0 1.6vh 1vw;
+  font-family: 'Cabin';
+}
+
+.market-description h2{
+  font-family: 'Nunito'
 }
