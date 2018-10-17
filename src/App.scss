@@ -32,6 +32,7 @@
 
 #wrapper video {
   width: 100vw;
+  height: 100vh;
   object-fit: cover;
   box-shadow: 0 0 8pt 3pt cadetblue; }
 
@@ -88,9 +89,9 @@ section {
 
 .projects {
   background-color: lightgrey;
-  -webkit-clip-path: polygon(0 0%, 100% 5%, 100% 95%, 0% 100%);
-  clip-path: polygon(0 0%, 100% 5%, 100% 95%, 0% 100%);
-  padding: 20px 10px 30px 10px;
+  -webkit-clip-path: polygon(0 0%, 100% 7%, 100% 93%, 0% 100%);
+  clip-path: polygon(0 0%, 100% 7%, 100% 93%, 0% 100%);
+  padding: 20px 10px 35px 10px;
  }
 
 #scroll a {
@@ -170,83 +171,6 @@ body {
   display: flex;
   justify-content: center;
    }
-
-.button {
-  text-align: center;
-  margin: 25px 20px;
-  touch-callout: none;
-  user-select: none;
-  display: inline-block;
-  border: .2em solid;
-  position: relative;
-  border-radius: 5px;
-  cursor: pointer;
-  overflow: hidden;
-  width: 200px;
-  opacity: 0.6;
-  color: black; }
-  .button__text {
-    display: block;
-    padding: 1em 2em;
-    text-transform: uppercase;
-    font-weight: bold; }
-    .button__text:before {
-      content: attr(title); }
-    .button__text--bis {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      transform: translateX(-1em);
-      opacity: 0; }
-  .button__mask {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: white;
-    transform: translateX(-100%) rotate(45deg);
-    transition: all 0.3s; }
-
-.button:hover {
-  opacity: 1; }
-  .button:hover .button__text {
-    animation: fx-text .2s ease-out; }
-    .button:hover .button__text--bis {
-      animation: fx-text-bis .2s ease-out; }
-  .button:hover .button__mask {
-    animation: fx-mask .2s ease-out; }
-
-.button:active {
-  opacity: 1;
-  background: white;
-  color: inherit; }
-
-@keyframes fx-mask {
-  0% {
-    transform: translateX(-100%) rotate(45deg); }
-  100% {
-    transform: translateX(100%) rotate(45deg); } }
-
-@keyframes fx-text {
-  0% {
-    transform: translateX(0);
-    opacity: 1; }
-  100% {
-    transform: translateX(1em);
-    opacity: 0; } }
-
-@keyframes fx-text-bis {
-  0% {
-    transform: translateX(-1em);
-    opacity: 0; }
-  100% {
-    transform: translateX(0);
-    opacity: 1; } }
 
 .project-header {
   text-align: center;
@@ -419,10 +343,13 @@ body {
 .market-monitor {
   display: flex;
   background: lightgrey;
+  position: relative;
+  top: 2vh;
   width: 100vw;
   //clip-path: polygon(0 0%, 100% 5%);
-  padding-bottom: 4vh;
-  clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0% 100%);
+  padding-bottom: 6vh;
+  padding-top: 2vh;
+  clip-path: polygon(0 0%, 100% 9%, 100% 100%, 0% 100%);
 }
 
 .market-image-name{
@@ -662,4 +589,36 @@ body {
 
 .market-description h2{
   font-family: 'Nunito'
+}
+
+.footer {
+  background: #2f3340;
+  width: 100vw;
+  height: 45px;
+  padding-top: 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  position: relative;
+  display: flex;
+}
+
+// .footer-anchor{
+//   position: relative;
+//   display: flex;
+// }
+
+.footer h2{
+  color: white;
+  margin: 0;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer img {
+  height: 5vh;
+  position: relative;
+  bottom: 5px;
+  margin: 0 15px 0 30px;
 }
