@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700,900|Dosis|Hind|Nunito|Cabin");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700,900|Dosis|Hind|Ubuntu|Nunito|Cabin");
 .App {
-  background: #B4CDCD; }
+  background: lightgrey; }
 
 button:focus {
   outline: 0; }
@@ -30,14 +30,15 @@ button:focus {
 
 #wrapper video {
   width: 100vw;
-  height: 100vh;
-  object-fit: cover;
   box-shadow: 0 0 8pt 3pt cadetblue; }
+
+.scroll-down {
+  display: flex;
+  justify-content: center; }
 
 .scroll-down a {
   position: absolute;
-  bottom: 28vh;
-  left: 47.2%;
+  bottom: 100px;
   z-index: 2;
   display: inline-block;
   -webkit-transform: translate(0, -50%);
@@ -64,7 +65,8 @@ section {
   background: #B4CDCD; }
 
 .bio {
-  padding-top: 2vh; }
+  padding: 1.25vh 0;
+  background: #B4CDCD; }
 
 .bio h2 {
   text-align: center;
@@ -76,17 +78,21 @@ section {
   text-align: center; }
 
 .me {
-  height: 275px;
+  height: 255px;
   margin: 0 auto;
   border-radius: 10px;
   margin-top: 4vh;
   box-shadow: 0 0 .2pt 1pt gray; }
 
 .projects {
-  background-color: lightgrey;
+  background-color: #B4CDCD;
   -webkit-clip-path: polygon(0 0%, 100% 7%, 100% 93%, 0% 100%);
-  clip-path: polygon(0 0%, 100% 7%, 100% 93%, 0% 100%);
+  clip-path: polygon(0 0%, 100% 7%, 100% 95%, 0% 100%);
   padding: 20px 10px 35px 10px; }
+  .projects h1 {
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-size: 38px; }
 
 #scroll a {
   padding-top: 80px; }
@@ -251,7 +257,8 @@ body {
 
 .artifact {
   display: flex;
-  padding-bottom: 5vh; }
+  padding-bottom: 5vh;
+  background: lightgrey; }
 
 .artifact video {
   height: 314px;
@@ -294,13 +301,14 @@ body {
 
 .market-monitor {
   display: flex;
-  background: lightgrey;
+  background: #B4CDCD;
   position: relative;
   top: 2vh;
   width: 100vw;
-  padding-bottom: 6vh;
+  padding-bottom: 10vh;
   padding-top: 2vh;
-  clip-path: polygon(0 0%, 100% 9%, 100% 100%, 0% 100%); }
+  -webkit-clip-path: polygon(0 0%, 100% 7%, 100% 93%, 0% 100%);
+  clip-path: polygon(0 0%, 100% 7%, 100% 100%, 0% 100%); }
 
 .market-image-name {
   text-align: center;
@@ -521,3 +529,31 @@ body {
   position: relative;
   bottom: 5px;
   margin: 0 15px 0 30px; }
+
+.skill-images {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 6vw;
+  width: 80vw; }
+  .skill-images img {
+    width: 6vw;
+    min-width: 20px; }
+  .skill-images .node-icon img {
+    height: 50px;
+    width: 120px;
+    margin: 0; }
+
+.skills {
+  text-align: center;
+  font-family: 'Nunito';
+  background-color: lightgrey;
+  padding: 10px 10px 35px 10px; }
+
+.skills-divide {
+  display: block;
+  border: none;
+  color: white;
+  height: 1px;
+  background: black;
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(lightgrey));
+  margin: 22px 0; }

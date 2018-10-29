@@ -1,6 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700,900|Dosis|Hind|Nunito|Cabin");
-.App {
-  background: #B4CDCD; }
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700,900|Dosis|Hind|Ubuntu|Nunito|Cabin");
+$background-color: #B4CDCD;
+// .App {
+//   background: #B4CDCD; }
+.App{
+  background: lightgrey;
+}
 
   button:focus {outline:0;}
 
@@ -32,14 +36,18 @@
 
 #wrapper video {
   width: 100vw;
-  height: 100vh;
-  object-fit: cover;
+  //height: 100vh;
+  //object-fit: cover;
   box-shadow: 0 0 8pt 3pt cadetblue; }
+
+  .scroll-down{
+    display: flex;
+    justify-content: center;
+  }
 
 .scroll-down a {
   position: absolute;
-  bottom: 28vh;
-  left: 47.2%;
+  bottom: 100px;
   z-index: 2;
   display: inline-block;
   -webkit-transform: translate(0, -50%);
@@ -66,7 +74,9 @@ section {
   background: #B4CDCD; }
 
 .bio {
-  padding-top: 2vh; }
+  padding: 1.25vh 0;
+background: $background-color
+ }
 
 .bio h2 {
   text-align: center;
@@ -80,7 +90,7 @@ section {
 }
 
 .me {
-  height: 275px;
+  height: 255px;
   margin: 0 auto;
   border-radius: 10px;
   margin-top: 4vh;
@@ -88,11 +98,17 @@ section {
  }
 
 .projects {
-  background-color: lightgrey;
+  background-color: #B4CDCD;
   -webkit-clip-path: polygon(0 0%, 100% 7%, 100% 93%, 0% 100%);
-  clip-path: polygon(0 0%, 100% 7%, 100% 93%, 0% 100%);
+  clip-path: polygon(0 0%, 100% 7%, 100% 95%, 0% 100%);
   padding: 20px 10px 35px 10px;
+  & h1{
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-size: 38px;
+  }
  }
+
 
 #scroll a {
   padding-top: 80px; }
@@ -288,6 +304,8 @@ body {
 .artifact {
   display: flex;
   padding-bottom: 5vh;
+  background: lightgrey;
+  //clip-path: polygon(0 0%, 100% 7%, 100% 100%, 0% 100%);
 }
 
 .artifact video{
@@ -342,14 +360,16 @@ body {
 
 .market-monitor {
   display: flex;
-  background: lightgrey;
+  background: $background-color;
   position: relative;
   top: 2vh;
   width: 100vw;
   //clip-path: polygon(0 0%, 100% 5%);
-  padding-bottom: 6vh;
+  padding-bottom: 10vh;
   padding-top: 2vh;
-  clip-path: polygon(0 0%, 100% 9%, 100% 100%, 0% 100%);
+  //clip-path: polygon(0 0%, 100% 7%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0%, 100% 7%, 100% 93%, 0% 100%);
+  clip-path: polygon(0 0%, 100% 7%, 100% 100%, 0% 100%);
 }
 
 .market-image-name{
@@ -621,4 +641,53 @@ body {
   position: relative;
   bottom: 5px;
   margin: 0 15px 0 30px;
+}
+
+
+.skill-images {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 6vw;
+  width: 80vw;
+& img{
+  width: 6vw;
+  min-width: 20px;
+}
+& .node-icon img{
+  height: 50px;
+  width: 120px;
+  margin: 0;
+}
+}
+
+// .node-icon img{ 
+//   height: 8vh;
+//   margin-top: 1vh;
+// }
+
+.skills {
+  text-align: center;
+  font-family: 'Nunito';
+  background-color: lightgrey;
+  // -webkit-clip-path: polygon(0 0%, 100% 7%, 100% 93%, 0% 100%);
+  //clip-path: polygon(0 0%, 100% 7%, 100% 93%, 0% 100%);
+  padding: 10px 10px 35px 10px;
+}
+
+// br {
+//   content: "";
+//   margin: 2em;
+//   display: block;
+//   font-size: 24%;
+//   color: black;
+// }
+
+.skills-divide {
+  display:block;
+  border:none;
+  color:white;
+  height:1px;
+  background:black;
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(lightgrey));
+  margin: 22px 0;
 }

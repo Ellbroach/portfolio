@@ -7,9 +7,16 @@ import Brew from './resources/True-Brew.png';
 import Artifact from './resources/Artifact.mp4';
 import Market from './resources/Market-Monitor.png';
 import Github from './resources/github-logo-1.png'
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import scroll, { Link, DirectLink, Element, Events, animateScroll as 
+  //scroll,
+   scrollSpy, scroller } from 'react-scroll';
 import Popup from './popUp';
 import Contact from './popUpContact';
+import ReactIcon from './resources/React-icon.dvg.svg';
+import ReduxIcon from './resources/redux.svg';
+import NodeIcon from './resources/Node.svg';
+import SassIcon from './resources/Sass_Logo_Color.svg';
+import SequelizeIcon from './resources/sequelize.svg';
 
 
 
@@ -50,8 +57,6 @@ class App extends Component {
           <div className="image-and-contact">
             <img className='me' src={Me} />
             <div className="button-container">
-
-
               <Popup />
               <br />
               <Contact />
@@ -64,7 +69,42 @@ class App extends Component {
             web.
           </h2>
         </div>
+        <div className='skills'>
+        <h1>Skills and Proficiency</h1>
+        <div className='skill-images'>
+        <div className='skill-icon'>
+          <img src={ReactIcon}/>
+          <h4>React</h4>
+        </div>
+        <div className='skill-icon'>
+          <img src={ReduxIcon}/>
+          <h4>Redux</h4>
+          </div>
+          <div className='skill-icon'>
+          <img src={SassIcon}/>
+          <h4>Sass/SCSS</h4>
+          </div>
+          <div className='node-icon'>
+          <img src={NodeIcon}/>
+          <h4>Node</h4>
+          </div>
+          <div className='skill-icon'>
+          <img src={SequelizeIcon}/>
+          <h4>Sequelize</h4>
+          </div>
+        </div>
+        <h2>Proficient</h2>
+        <h3>React,  Redux,  React-Native,  CSS/SCSS/Sass,  Node.js,  Sequelize,  PostgreSQL</h3>
+        <h3>Express, Git, Axios, Webpack</h3>
+        <span className='skills-divide'/>
+        <h2>Knowledgeable</h2>
+        <h3>Less, Firebase, Mocha, Chai, Bluebird</h3>
+        <span className='skills-divide'/>
+        <h2>Some Experience</h2>
+        <h3>D3, Vue, MongoDB</h3>
+        </div>
         <div className="projects">
+        <h1>Projects</h1>
           <div className="brew">
             <div className="project-image-name">
               <h2>True Brew</h2>
@@ -75,13 +115,12 @@ class App extends Component {
                 True Brew was created to address the problem of corporate beer
                 conglomerations promoting their products as independent craft
                 beer. Beginning with the premise that all breweries represented
-                on the site are owned by their founders or their employees, True
+                on the site are owned by their founders or employees, True
                 Brew is a platform that helps users identify beers that embody
-                the ideals of the craft beer community. Users can also connect
-                with eachother through leaving reviews and ratings on individual
-                beers. Although still in its first version, True Brew has a fully
-                functional cart system with email verification on checkout, as
-                well as administrative capabilities, allowing licensed users to
+                the ideals of the craft beer community. This E-Commerce site allows 
+                logged in users to make ratings/ reviews on products, 
+                checkout their cart and recieve email verification, as
+                well as administrative capabilities, such as the abilities
                 create, remove, and update the database of breweries, beers, and
                 reviews.
               </h2>
