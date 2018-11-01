@@ -72,25 +72,20 @@ class App extends Component {
         <div className='skills'>
         <h1>Skills and Proficiency</h1>
         <div className='skill-images'>
-        <div className='skill-icon'>
+        <div className='react-icon'>
           <img src={ReactIcon}/>
-          <h4>React</h4>
         </div>
-        <div className='skill-icon'>
+        <div className='redux-icon'>
           <img src={ReduxIcon}/>
-          <h4>Redux</h4>
           </div>
-          <div className='skill-icon'>
+          <div className='sass-icon'>
           <img src={SassIcon}/>
-          <h4>Sass/SCSS</h4>
           </div>
           <div className='node-icon'>
           <img src={NodeIcon}/>
-          <h4>Node</h4>
           </div>
-          <div className='skill-icon'>
+          <div className='sequelize-icon'>
           <img src={SequelizeIcon}/>
-          <h4>Sequelize</h4>
           </div>
         </div>
         <h2>Proficient</h2>

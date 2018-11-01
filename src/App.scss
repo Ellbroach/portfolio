@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700,900|Dosis|Hind|Ubuntu|Nunito|Cabin");
 $background-color: #B4CDCD;
-// .App {
-//   background: #B4CDCD; }
+
 .App{
   background: lightgrey;
 }
@@ -100,7 +99,7 @@ background: $background-color
 .projects {
   background-color: #B4CDCD;
   -webkit-clip-path: polygon(0 0%, 100% 7%, 100% 93%, 0% 100%);
-  clip-path: polygon(0 0%, 100% 7%, 100% 95%, 0% 100%);
+  clip-path: polygon(0 0%, 100% 5%, 100% 95%, 0% 100%);
   padding: 20px 10px 35px 10px;
   & h1{
     text-align: center;
@@ -650,14 +649,19 @@ body {
   margin: 0 6vw;
   width: 80vw;
 & img{
-  width: 6vw;
+  width: 80px;
   min-width: 20px;
 }
-& .node-icon img{
-  height: 50px;
-  width: 120px;
-  margin: 0;
+& .react-icon img {
+  height: 100px;
+  width: 200px;
 }
+& .node-icon img{
+  height: 40px;
+  width: 120px;
+  // margin: 0 0 20px;
+}
+
 }
 
 // .node-icon img{ 

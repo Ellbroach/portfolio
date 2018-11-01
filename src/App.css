@@ -87,7 +87,7 @@ section {
 .projects {
   background-color: #B4CDCD;
   -webkit-clip-path: polygon(0 0%, 100% 7%, 100% 93%, 0% 100%);
-  clip-path: polygon(0 0%, 100% 7%, 100% 95%, 0% 100%);
+  clip-path: polygon(0 0%, 100% 5%, 100% 95%, 0% 100%);
   padding: 20px 10px 35px 10px; }
   .projects h1 {
     text-align: center;
@@ -536,12 +536,14 @@ body {
   margin: 0 6vw;
   width: 80vw; }
   .skill-images img {
-    width: 6vw;
+    width: 80px;
     min-width: 20px; }
+  .skill-images .react-icon img {
+    height: 100px;
+    width: 200px; }
   .skill-images .node-icon img {
-    height: 50px;
-    width: 120px;
-    margin: 0; }
+    height: 40px;
+    width: 120px; }
 
 .skills {
   text-align: center;
