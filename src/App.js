@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import './test.css'
 import Background from './resources/Far_4K_Motion_Background_Loop (1).mp4';
-import Me from './resources/Me.jpg';
+import Me from './resources/ProPic.jpg';
 import Brew from './resources/True-Brew.png';
 import Artifact from './resources/Artifact.mp4';
 import Market from './resources/Market-Monitor.png';
