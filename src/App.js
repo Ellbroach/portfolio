@@ -30,7 +30,7 @@ class App extends Component {
 
   scrollTo() {
     scroller.scrollTo("bio", {
-      duration: 800,
+      duration: 790,
       delay: 0,
       smooth: "easeInOutQuart"
     });
