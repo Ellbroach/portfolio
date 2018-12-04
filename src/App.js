@@ -66,7 +66,7 @@ class App extends Component {
             I graduated from Colgate University in 2017 with a degree in Art
             History and an emphasis in contemporary visual design. I then
             enrolled in Fullstack Academy to learn how to bring my passion for design to the
-            web.
+            web. I now work as a programmer and a business analyst for Capgemini Consulting.
           </h2>
         </div>
         <div className='skills'>
