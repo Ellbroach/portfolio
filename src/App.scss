@@ -98,8 +98,8 @@ background: $background-color
 
 .projects {
   background-color: #B4CDCD;
-  -webkit-clip-path: polygon(0 0%, 100% 7%, 100% 93%, 0% 100%);
-  clip-path: polygon(0 0%, 100% 5%, 100% 95%, 0% 100%);
+  // -webkit-clip-path: polygon(0 0%, 100% 7%, 100% 93%, 0% 100%);
+  // clip-path: polygon(0 0%, 100% 5%, 100% 95%, 0% 100%);
   padding: 20px 10px 35px 10px;
   & h1{
     text-align: center;
@@ -367,8 +367,8 @@ body {
   padding-bottom: 10vh;
   padding-top: 2vh;
   //clip-path: polygon(0 0%, 100% 7%, 100% 100%, 0% 100%);
-  -webkit-clip-path: polygon(0 0%, 100% 7%, 100% 93%, 0% 100%);
-  clip-path: polygon(0 0%, 100% 7%, 100% 100%, 0% 100%);
+  // -webkit-clip-path: polygon(0 0%, 100% 7%, 100% 93%, 0% 100%);
+  // clip-path: polygon(0 0%, 100% 7%, 100% 100%, 0% 100%);
 }
 
 .market-image-name{
